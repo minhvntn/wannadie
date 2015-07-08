@@ -1,0 +1,34 @@
+<ion-view view-title="Movie">
+  <ion-content>
+    <div class="list card">
+      <div class="item">
+        <h3>Time: {{movie.time}}</h3>
+        <h2>{{movie.title}}</h2>
+        <p>{{movie.director}}</p>
+      </div>
+      <div>
+        <ion-item href="#/app/play/{{movie.id}}">
+          <img ng-src="{{movie.url}}" width="15%;"> Xem
+        </ion-item>
+        <ion
+      </div>
+      <div class="item item-body">
+        <p>Description: {{movie.description}}</p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

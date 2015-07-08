@@ -1,0 +1,10 @@
+<ion-view view-title="Movies">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="movie in movies"
+        href="#/app/movies/{{movie.id}}">
+        <img ng-src="{{movie.url}}" width="10%;">{{movie.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
